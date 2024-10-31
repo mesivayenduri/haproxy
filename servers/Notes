@@ -1,0 +1,7 @@
+docker build . -t server2222
+docker build . -t server3333
+docker build . -t server4444
+
+docker run -p 2222:2222 server2222
+docker run -p 3333:3333 server3333
+docker run -p 4444:4444 server4444
