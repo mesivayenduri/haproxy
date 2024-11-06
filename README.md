@@ -2,7 +2,7 @@
 # Deployed 3 Spring Boot application containers.
 
 # Update the IPAddress of springboot application containers in haproxy.cfg
-# Run the haproxy as below
+# Run the haproxy as below to volume mount the haproxy.cfg. So that we avoid docker image re builds whenever we make changes in haproxy.cfg.
 # docker run -d -p 80:80 -p 8081:8081 -p 8404:8404 -v C:\Users\mesiv\haproxy-1\haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro  hap
 
 
